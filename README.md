@@ -17,6 +17,17 @@ npm run dev
 
 Open http://localhost:4173
 
+## Deploy (Vercel)
+
+Production: https://tradingkit-hub-beate-maries-projects.vercel.app
+
+The app is a Vite SPA with a serverless `/api/mcp-status` route. If the deployment is behind Vercel Authentication, disable Deployment Protection for production in the Vercel project settings or access it while logged into the Vercel team.
+
+```bash
+npm run build
+npx vercel --prod
+```
+
 ## Scripts
 
 | Command | Description |
