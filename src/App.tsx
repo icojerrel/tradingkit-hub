@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
 import { CopyButton } from "./components/CopyButton";
+import { McpStatus } from "./components/McpStatus";
 import { ProductIcon } from "./components/ProductIcon";
 import {
   agentSetups,
@@ -160,6 +161,7 @@ export function App() {
                 Trader Dev runs Pine Script backtests for your AI agent. Install
                 the SSE endpoint once, then paste the bootstrap prompts below.
               </p>
+              <McpStatus />
               <div className="endpoint-box">
                 <code>{mcpEndpoint}</code>
                 <CopyButton text={mcpEndpoint} label="Copy URL" />
